@@ -7,7 +7,7 @@ section .bss                ;we define (global) initialized variables in .data s
     result resq 1  
     z resq 1
 
-section .text               ;we write code in .text section 
+section .text               ;we write :code in .text section 
     global start   
     global assFunc 
     extern printf
