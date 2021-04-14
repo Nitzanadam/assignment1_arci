@@ -5,15 +5,18 @@
 extern assFunc(int x);
 
 char c_checkValidity(int x){
-    if(x%2==0)
-        return (char)1;
-    return (char)0;
+
+    char b = 0;
+    if(x%2 == 0){
+        b = 1;
+    }
+    return b;
 }
 
 int main(){
     char number[4];
     scanf("%s",number);
-    int a=atoi(number);
+    int a = atoi(number);
     
     assFunc(a);
     return 0;
